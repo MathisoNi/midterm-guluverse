@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Foldit:wght@100;400;600&family=Notable&family=Noto+Sans+Linear+B&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Noto Sans Linear B', sans-serif;
+    background: url('../img/333.png') no-repeat center center fixed;
+    background-size: cover;
+    overflow: auto;
+    line-height: 1.6;
+    padding: 2rem 0;
+    padding-bottom: 100px;/*in order not to be overlapped with footer*/
+}
+
+.glass-window {
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+header .header-content {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Luckiest Guy', cursive;
+}
+.header-content2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Courgette', cursive;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.intro, .details {
+    margin-bottom: 2rem;
+}
+
+.intro h2, .details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.details p {
+    margin-bottom: 1.5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 1rem auto;
+}
+
+.return-home-button {
+    position: fixed; 
+    top: 40px; 
+    left: 10px; 
+    font-size: 24px; 
+    cursor: pointer; 
+}
+
+.return-home-button i:hover {
+    color: #FFD700; 
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px; 
+    }
+.rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+    z-index: 999;
+}
+
+.drop {
+    background: rgba(255, 255, 255, 0.6);
+    width: 1px;
+    height: 89px;
+    position: absolute;
+    bottom: 100%;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(1000vh);
+    }
+}
